@@ -10,22 +10,19 @@
      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body class="fullbg">
+<font color="red">
+    <h1 id="abc"></h1>
+</font>
 <p>Today is <u><label id='today'></label></u></p></b>
     <!--py-env>
         - os
     </py-env-->
 
     <div>
-        <!--py-script>
-        import os
-            #a=10
-            #b=20
-            #print(a+b)
-            for i in range(10):
-                print("{0}".format(i))
-            
-            print(os.system())
-        </py-script-->
+        <py-script>
+        #import matplotlib.pyplot as plt
+
+        </py-script>
         <py-script>
         import datetime as dt
         pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
