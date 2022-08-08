@@ -5,15 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyscript-Tutorial</title>
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+     <link rel="stylesheet" href="style.css" />
+     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
-<body>
-    Hai
-    <py-script>
-        print("Hello World")
-    </py-script>
+<body class="fullbg">
+<p>Today is <u><label id='today'></label></u></p></b>
+    <!--py-env>
+        - os
+    </py-env-->
 
-
+    <div>
+        <!--py-script>
+        import os
+            #a=10
+            #b=20
+            #print(a+b)
+            for i in range(10):
+                print("{0}".format(i))
+            
+            print(os.system())
+        </py-script-->
+        <py-script>
+        import datetime as dt
+        pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
+        </py-script>
+    <div>
+        
+    
+    
+    
+    
+    
+    
+    
+    
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </body>
 </html>
